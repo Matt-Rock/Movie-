@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "eslint:recommended", "airbnb", "prettier", "prettier/react"
+        "eslint:recommended", "prettier", "prettier/react"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -25,10 +25,12 @@
         "react/no-array-index-key": [0],
         "react/no-danger": [0],
         "no-param-reassign": [0],
-        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/rules-of-hooks": "warn",
         "react-hooks/exhaustive-deps": "warn",
         "no-console": [0],
         "arrow-body-style": [0],
-        "prefer-arrow-callback": [0]
+        "prefer-arrow-callback": [0],
+        "camelcase": ["error", {"properties": "never"}],
+        "no-unused-vars": 0
       }
 }
